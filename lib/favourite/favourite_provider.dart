@@ -33,6 +33,17 @@ class FavouriteNotifier extends StateNotifier<FavouriteState> {
     state = state.copyWith(
         allItem: updated, filterdItem: _filter(updated, state.search));
   }
+  // void toggleFavourite(int id) {
+  //   final updated = state.allItem.map((e) {
+  //     if (e.id == id) {
+  //       return e.copyWith(favourite: !e.favourite);
+  //     }
+  //     return e;
+  //   }).toList();
+  //
+  //   state = state.copyWith(
+  //       allItem: updated, filterdItem: _filter(updated, state.search));
+  // }
 
   void setSearch(String query) {
     state = state.copyWith(
